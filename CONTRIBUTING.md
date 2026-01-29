@@ -1,6 +1,6 @@
 # Contributing to EPC Management System
 
-First off, thank you for considering contributing to EPC Management System! It's people like you that make this project such a great tool.
+Thank you for considering contributing to EPC Management System. Your contributions help make this project better.
 
 ## Table of Contents
 
@@ -372,7 +372,7 @@ When adding new features:
 3. Update component documentation
 4. Add usage examples
 
-## Questions?
+## Questions
 
 - Open an issue with the `question` label
 - Contact the maintainers
@@ -380,10 +380,6 @@ When adding new features:
 
 ## Recognition
 
-Contributors will be recognized in:
+Contributors will be recognized in release notes and project credits.
 
-- README acknowledgments
-- Release notes
-- Project credits
-
-Thank you for contributing! 🎉
+Thank you for contributing.

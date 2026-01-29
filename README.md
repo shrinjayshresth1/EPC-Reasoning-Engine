@@ -1,13 +1,12 @@
-# EPC Management System 🏗️
+# EPC Management System
 
 A modern, feature-rich Engineering, Procurement, and Construction (EPC) management application built with React and Vite. This system provides comprehensive project management capabilities with AI-powered insights, risk analysis, vendor management, and real-time collaboration features.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![React](https://img.shields.io/badge/react-18.3.1-blue.svg)
 ![Vite](https://img.shields.io/badge/vite-6.0.3-646CFF.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -19,28 +18,27 @@ A modern, feature-rich Engineering, Procurement, and Construction (EPC) manageme
 - [Environment Configuration](#environment-configuration)
 - [Theme System](#theme-system)
 - [Contributing](#contributing)
-- [License](#license)
 
-## ✨ Features
+## Features
 
 ### Core Functionality
 
-- **📊 Project Dashboard** - Comprehensive overview of project metrics, budgets, and milestones
-- **🤖 AI-Powered Chat** - Intelligent assistant for project insights and recommendations
-- **📄 Specification Review** - Document management and review system
-- **⚠️ Risk Analysis** - Real-time risk assessment and monitoring
-- **🤝 Vendor Management** - Streamlined vendor onboarding and management
-- **⚙️ Settings & Configuration** - Customizable user preferences
+- **Project Dashboard** - Comprehensive overview of project metrics, budgets, and milestones
+- **AI-Powered Chat** - Intelligent assistant for project insights and recommendations
+- **Specification Review** - Document management and review system
+- **Risk Analysis** - Real-time risk assessment and monitoring
+- **Vendor Management** - Streamlined vendor onboarding and management
+- **Settings and Configuration** - Customizable user preferences
 
 ### UI/UX Features
 
-- **🌓 Dark/Light Theme Toggle** - Seamless theme switching with persistent preferences
-- **📱 Responsive Design** - Mobile-first approach with adaptive layouts
-- **🎨 Modern UI Components** - Clean, professional interface with smooth animations
-- **🔍 Bottom Navigation** - Easy access to key features on mobile devices
-- **⚡ Fast Performance** - Optimized with Vite for lightning-fast development and builds
+- **Dark/Light Theme Toggle** - Seamless theme switching with persistent preferences
+- **Responsive Design** - Mobile-first approach with adaptive layouts
+- **Modern UI Components** - Clean, professional interface with smooth animations
+- **Bottom Navigation** - Easy access to key features on mobile devices
+- **Fast Performance** - Optimized with Vite for lightning-fast development and builds
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend Framework
 
@@ -52,7 +50,7 @@ A modern, feature-rich Engineering, Procurement, and Construction (EPC) manageme
 - **Vite 6.0.3** - Next-generation frontend tooling
 - **@vitejs/plugin-react 4.3.4** - React Fast Refresh support
 
-### Styling & Icons
+### Styling and Icons
 
 - **CSS Modules** - Scoped styling for components
 - **React Icons 5.0.1** - Comprehensive icon library
@@ -61,55 +59,55 @@ A modern, feature-rich Engineering, Procurement, and Construction (EPC) manageme
 
 - **React Context API** - Theme management and global state
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 L & T/
-├── 📂 src/                          # Source code directory
-│   ├── 📂 components/               # Reusable UI components
-│   │   ├── 📂 common/              # Common/shared components
-│   │   │   ├── Button.jsx          # Custom button component
-│   │   │   └── Button.css          # Button styles
-│   │   └── 📂 layout/              # Layout components
-│   │       ├── Header.jsx          # Header with theme toggle
-│   │       ├── Header.css          # Header styles
-│   │       ├── BottomNav.jsx       # Mobile bottom navigation
-│   │       └── BottomNav.css       # Bottom nav styles
+├── src/                             # Source code directory
+│   ├── components/                  # Reusable UI components
+│   │   ├── common/                  # Common/shared components
+│   │   │   ├── Button.jsx           # Custom button component
+│   │   │   └── Button.css           # Button styles
+│   │   └── layout/                  # Layout components
+│   │       ├── Header.jsx           # Header with theme toggle
+│   │       ├── Header.css           # Header styles
+│   │       ├── BottomNav.jsx        # Mobile bottom navigation
+│   │       └── BottomNav.css        # Bottom nav styles
 │   │
-│   ├── 📂 context/                 # React Context providers
-│   │   └── ThemeContext.jsx       # Theme state management
+│   ├── context/                     # React Context providers
+│   │   └── ThemeContext.jsx        # Theme state management
 │   │
-│   ├── 📂 pages/                   # Page components (routes)
-│   │   ├── ProjectDashboard.jsx   # Main project overview
-│   │   ├── ProjectDashboard.css   # Dashboard styles
-│   │   ├── AIChat.jsx             # AI assistant interface
-│   │   ├── AIChat.css             # Chat styles
+│   ├── pages/                       # Page components (routes)
+│   │   ├── ProjectDashboard.jsx    # Main project overview
+│   │   ├── ProjectDashboard.css    # Dashboard styles
+│   │   ├── AIChat.jsx              # AI assistant interface
+│   │   ├── AIChat.css              # Chat styles
 │   │   ├── SpecificationReview.jsx # Document review page
 │   │   ├── SpecificationReview.css # Review page styles
-│   │   ├── RiskAnalysis.jsx       # Risk assessment page
-│   │   ├── RiskAnalysis.css       # Risk page styles
-│   │   ├── VendorManagement.jsx   # Vendor management page
-│   │   ├── VendorManagement.css   # Vendor page styles
-│   │   ├── Settings.jsx           # Settings page
-│   │   └── Settings.css           # Settings styles
+│   │   ├── RiskAnalysis.jsx        # Risk assessment page
+│   │   ├── RiskAnalysis.css        # Risk page styles
+│   │   ├── VendorManagement.jsx    # Vendor management page
+│   │   ├── VendorManagement.css    # Vendor page styles
+│   │   ├── Settings.jsx            # Settings page
+│   │   └── Settings.css            # Settings styles
 │   │
-│   ├── 📂 hooks/                   # Custom React hooks (future)
-│   ├── 📂 utils/                   # Utility functions (future)
-│   ├── 📂 assets/                  # Static assets (images, fonts)
+│   ├── hooks/                       # Custom React hooks (future)
+│   ├── utils/                       # Utility functions (future)
+│   ├── assets/                      # Static assets (images, fonts)
 │   │
-│   ├── App.jsx                     # Main app component
-│   ├── main.jsx                    # App entry point
-│   └── index.css                   # Global styles & CSS variables
+│   ├── App.jsx                      # Main app component
+│   ├── main.jsx                     # App entry point
+│   └── index.css                    # Global styles and CSS variables
 │
-├── 📂 public/                       # Public static assets
-├── 📂 node_modules/                 # Dependencies (gitignored)
+├── public/                          # Public static assets
+├── node_modules/                    # Dependencies (gitignored)
 │
-├── 📄 index.html                    # HTML entry point
-├── 📄 package.json                  # Project dependencies & scripts
-├── 📄 package-lock.json             # Dependency lock file
-├── 📄 vite.config.js               # Vite configuration
-├── 📄 .gitignore                    # Git ignore rules
-└── 📄 README.md                     # Project documentation
+├── index.html                       # HTML entry point
+├── package.json                     # Project dependencies and scripts
+├── package-lock.json                # Dependency lock file
+├── vite.config.js                   # Vite configuration
+├── .gitignore                       # Git ignore rules
+└── README.md                        # Project documentation
 ```
 
 ### Component Architecture
@@ -133,11 +131,11 @@ App (Router)
 │   └── BottomNav (Global)
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-Before you begin, ensure you have the following installed:
+Ensure you have the following installed:
 
 - **Node.js** (v18.0.0 or higher)
 - **npm** (v9.0.0 or higher) or **yarn** (v1.22.0 or higher)
@@ -149,7 +147,7 @@ Before you begin, ensure you have the following installed:
 - **RAM**: Minimum 4GB (8GB recommended)
 - **Disk Space**: 500MB for dependencies
 
-## 📦 Installation
+## Installation
 
 1. **Clone the repository**
 
@@ -175,7 +173,7 @@ Before you begin, ensure you have the following installed:
    npm list --depth=0
    ```
 
-## 🎯 Running the Application
+## Running the Application
 
 ### Development Mode
 
@@ -210,7 +208,7 @@ Preview the production build locally:
 npm run preview
 ```
 
-## 📜 Available Scripts
+## Available Scripts
 
 | Script      | Command           | Description                       |
 | ----------- | ----------------- | --------------------------------- |
@@ -218,7 +216,7 @@ npm run preview
 | **build**   | `npm run build`   | Create optimized production build |
 | **preview** | `npm run preview` | Preview production build locally  |
 
-## ⚙️ Environment Configuration
+## Environment Configuration
 
 ### CSS Variables (Theme System)
 
@@ -240,16 +238,16 @@ The application uses CSS custom properties for theming. All theme variables are 
 
 ### LocalStorage Keys
 
-| Key     | Purpose                        | Type                |
-| ------- | ------------------------------ | ------------------- |
-| `theme` | Stores user's theme preference | `'dark' \| 'light'` |
+| Key     | Purpose                      | Type                |
+| ------- | ---------------------------- | ------------------- |
+| `theme` | Stores user theme preference | `'dark' \| 'light'` |
 
-## 🎨 Theme System
+## Theme System
 
 ### Features
 
 - **Persistent Theme** - User preference saved to localStorage
-- **System Integration** - Respects user's OS theme preference
+- **System Integration** - Respects user OS theme preference
 - **Smooth Transitions** - Animated theme switching
 - **Global Access** - Theme state available via Context API
 
@@ -265,7 +263,7 @@ function MyComponent() {
 }
 ```
 
-## 🏗️ Development Guidelines
+## Development Guidelines
 
 ### Code Style
 
@@ -307,7 +305,7 @@ const Component = ({ props }) => {
 export default Component;
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -327,9 +325,9 @@ export default Component;
 
 - **Solution**: Check browser localStorage is enabled and not blocked
 
-## 🤝 Contributing
+## Contributing
 
-We welcome contributions! Please follow these steps:
+Contributions are welcome. Please follow these steps:
 
 1. **Fork the repository**
 2. **Create a feature branch**
@@ -354,36 +352,21 @@ We welcome contributions! Please follow these steps:
 - Follow the existing code style
 - Ensure all tests pass before submitting PR
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 - **First Contentful Paint**: < 1.5s
 - **Time to Interactive**: < 3.5s
 - **Lighthouse Score**: 90+
 - **Bundle Size**: < 200KB (gzipped)
 
-## 🔒 Security
+## Security
 
 - No sensitive data in client-side code
 - Environment variables for API keys
 - Content Security Policy headers
 - Regular dependency updates
 
-## 📝 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-- **Project Team** - Initial work and maintenance
-
-## 🙏 Acknowledgments
-
-- React team for the amazing framework
-- Vite team for blazing fast build tooling
-- React Icons for comprehensive icon library
-- L&T for project requirements and support
-
-## 📞 Support
+## Support
 
 For support, please:
 
@@ -393,6 +376,4 @@ For support, please:
 
 ---
 
-**Made with ❤️ by the EPC Development Team**
-
-_Last updated: January 30, 2026_
+Last updated: January 30, 2026

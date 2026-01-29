@@ -1,0 +1,285 @@
+.risk-analysis {
+    background-color: var(--color-bg-primary);
+}
+
+.risk-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.risk-project {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.risk-version {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    background-color: var(--color-bg-elevated);
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+}
+
+.risk-content {
+    padding: var(--spacing-lg);
+}
+
+.section-title-large {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.heatmap-container {
+    position: relative;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.heatmap-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background-color: var(--color-bg-primary);
+    padding: 2px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-md);
+}
+
+.heatmap-cell {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+    cursor: pointer;
+}
+
+.heatmap-cell:hover {
+    opacity: 0.8;
+}
+
+.risk-marker {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-bg-primary);
+    box-shadow: var(--shadow-md);
+    animation: fadeIn var(--transition-normal);
+}
+
+.heatmap-labels {
+    position: relative;
+    margin-top: var(--spacing-md);
+}
+
+.y-axis-label {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.x-axis-label {
+    text-align: center;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: var(--spacing-sm);
+}
+
+.risk-detail-card {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    animation: slideUp var(--transition-normal);
+}
+
+.risk-detail-header {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.risk-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+
+.risk-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--spacing-lg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.investigation-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.risk-title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.risk-badge {
+    display: inline-block;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+}
+
+.risk-badge.critical {
+    background-color: var(--color-critical);
+    color: white;
+}
+
+.risk-metrics {
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.risk-metric {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.metric-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.metric-bar {
+    width: 100%;
+    height: 8px;
+    background-color: var(--color-bg-elevated);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.metric-fill {
+    height: 100%;
+    transition: width var(--transition-slow);
+}
+
+.metric-percentage {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.mitigation-section {
+    background-color: var(--color-bg-elevated);
+    padding: var(--spacing-lg);
+    margin: 0 var(--spacing-lg) var(--spacing-lg);
+    border-radius: var(--radius-md);
+}
+
+.mitigation-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.mitigation-icon {
+    font-size: 20px;
+    color: var(--color-text-primary);
+}
+
+.mitigation-title {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    letter-spacing: 0.5px;
+}
+
+.mitigation-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.mitigation-item {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+}
+
+.mitigation-number {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-text-tertiary);
+    background-color: var(--color-bg-card);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.mitigation-text {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    flex: 1;
+}
+
+.risk-detail-card .btn {
+    margin: 0 var(--spacing-lg) var(--spacing-lg);
+}
+
+/* Desktop Responsive */
+@media (min-width: 768px) {
+  .risk-content {
+    padding: var(--spacing-xl);
+  }
+  
+  .heatmap-container {
+    max-width: 600px;
+    margin: 0 auto var(--spacing-2xl);
+  }
+  
+  .risk-detail-card {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .risk-detail-header {
+    height: 300px;
+  }
+}

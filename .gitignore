@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# Build outputs
+dist/
+build/
+*.log
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
